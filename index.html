@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <p>
+            ФИО * test
+            <input type="text" name="fio"  
+            placeholder="Заполните ФИО" required
+            >
+            <!-- в атрибуте name запрещена кириллица -->
+        </p>
+        <p>
+            Пароль
+            <input type="password" name="pass">
+        </p>
+        <p>
+            Ваш возраст
+            <input type="radio" name="age" value="18-"> до 18
+            <input type="radio" name="age" value="18+" checked> больше 18
+            <!-- 
+                Правила для checkbox и radio
+                name=value
+                1) В рамках одного вопроса, устанавливаем одно значение для атрибута name 
+                2) Обязательно установить атрибут value (значение по умолчанию)
+            -->
+        </p>
+        <p>
+            Любимый фрукт 
+            <input type="checkbox" name="fruit" value="Ананас">Ананас
+            <input type="checkbox" name="fruit" value="Манго">Манго
+            <input type="checkbox" name="fruit" value="Киви" disabled>Киви
+            <!-- disabled для любых элементов формы -->
+        </p>
+        <p>
+            Любимый цвет
+            <input type="color" name="favColor" value="#D7435E">
+        </p>
+        <p>
+            Дата рождения
+            <input type="date" name="dateBirth">
+        </p>
+        <p>
+            Ваша страна
+            <select name="country">
+                <option value="AU">Австралия</option>
+                <option value="CU">Куба</option>
+                <option value="JP" selected>Япония</option>
+            </select>
+        </p>
+        <p>
+            Сообщение<textarea name="message"></textarea>
+        </p>
+        <p>
+            <button type="reset">Очистить</button>
+            <button type="submit">Отправить</button>
+        </p>
+        
+    </form>
+</body>
+</html>
+
+
